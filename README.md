@@ -33,7 +33,9 @@ To activate the environment, run:
 
 >python3 YOUR_PATH_HERE/cs101aFinalClassification/main.py
 <br>
+
 ### From VSCode:
+
 <br>
 First, open VSCode (or any IDE).
 
