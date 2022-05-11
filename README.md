@@ -18,7 +18,7 @@ First, download the repository.
 
 Then, in a terminal, run the command:
 
->conda env create -f YOUR_PATH_HERE/cs101aFinalRomer.yaml
+>conda env create -f YOUR_PATH_HERE/cs101aFinalRomer.yml
 
 This should download all required libraries and create the virtual environment used to run both the Jupyter notebook (training the model) and the main.py file in the cs101aFinalClassification directory.
 
@@ -29,20 +29,31 @@ To activate the environment, run:
 # Running the image classification program (cs101aFinalClassification/main.py)
 
 ### From the command line:
-<br>
 
 >python3 YOUR_PATH_HERE/cs101aFinalClassification/main.py
-<br>
 
 ### From VSCode:
 
-<br>
-First, open VSCode (or any IDE).
-
-Then, open up main.py in your IDE.
-
-Finally, ensure that your Python interpreter is set to the the cs101aFinalRomer environment, and run the file.
+<ol>
+    <li>Open VSCode (or any IDE).</li>
+    <li>Open up the cs101aFinalClassification folder. Open the entire folder in the IDE (e.g. in the terminal, run `code .` while in the cs101aFinalClassification folder).</li>
+    <li>Ensure that your Python interpreter is set to the the cs101aFinalRomer environment, and run the main.py. Final_Model.pt should be in the same folder as main.py</li>
+</ol>
 
 # What the program expects
 
 This image classification model expects a directory of png images. 
+
+# Running the model training program
+
+This is done in a Jupyter-lab notebook.
+
+To start, you must have jupyter installed. If not, run:
+
+> conda install -c anaconda jupyter 
+
+Then, while in a terminal window, simply cd to cs101aFinalTraining and run the command:
+
+>jupyter-lab
+
+All required packages should have been installed through conda, as described earlier.
